@@ -1,0 +1,12 @@
+[package]
+name = "rinha"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.4"
+chrono = { version = "0.4.34", features = ["serde"] }
+serde = { version = "1.0.196", features = ["derive"] }
+serve = "0.0.1"
+sqlx = { version = "0.7.3", features = ["postgres", "runtime-tokio", "chrono"] }
+tokio = { version = "1.36.0", features = ["full", "macros", "rt-multi-thread"] }
